@@ -70,10 +70,35 @@ class Picture:
     return Picture(newimg)
 
   def verticalRepeat(self, n):
-    return Picture(None)
+    
+    newimg = []
+     
+    for i in range (n):
+      for line in self.img:
+        newimg.append(line)
+
+    return Picture(newimg)
 
   #Extra: Sólo para realmente viciosos 
   def rotate(self):
     """Devuelve una figura rotada en 90 grados, puede ser en sentido horario
     o antihorario"""
     return Picture(None)
+
+  def setBackground(self,casilla):
+    newimg = []
+    aux = casilla.img[0]
+
+    # obtiene las cadenas del arreglo
+    for line in self.img:
+      auxiliar= ""
+      # obtiene los caracteres de la cadena
+      for char in line:
+        # Ingresa el character inverso en una linea
+        if(char == ' '):
+          auxiliar = auxiliar+ aux[0]
+        else:
+          auxiliar= auxiliar+ char
+      # Agrega el character inverso al nuevo arreglo que formara la img
+      newimg.append(auxiliar)
+    return Picture(newimg)
