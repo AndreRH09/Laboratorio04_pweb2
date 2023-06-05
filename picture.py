@@ -44,7 +44,7 @@ class Picture:
   def join(self, p):
     newimg = []
     for x in range (len(self.img)):
-      newimg.append(self.img[x]+p.img[x])
+      newimg.append(str(self.img[x])+str(p.img[x]))
     return Picture(newimg)
 
   def up(self, p):
