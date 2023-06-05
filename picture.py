@@ -19,20 +19,39 @@ class Picture:
     return vertical
 
   def horizontalMirror(self):
-    """ Devuelve el espejo horizontal de la imagen """
-    return Picture(None)
+    newimg = []
+    for cadena in self.img:
+      line=''
+      for charact in cadena:
+        line = charact + line
+      newimg.append(line)
+
+    return Picture(newimg)
 
   def negative(self):
-    """ Devuelve un negativo de la imagen """
-    return Picture(None)
+    negative = []
+    # obtiene las cadenas del arreglo
+    for cadena in self.img:
+      line= ""
+      # obtiene los caracteres de la cadena
+      for char in cadena:
+        # Ingresa el character inverso en una linea
+        line = line+self._invColor(char)
+      # Agrega el character inverso al nuevo arreglo que formara la img
+      negative.append(line)
+    return Picture(negative)
 
   def join(self, p):
-    """ Devuelve una nueva figura poniendo la figura del argumento 
-        al lado derecho de la figura actual """
-    return Picture(None)
+    newimg = []
+    for x in range (len(self.img)):
+      newimg.append(self.img[x]+p.img[x])
+    return Picture(newimg)
 
   def up(self, p):
-    return Picture(None)
+    newimg = self.img
+    for x in range (len(p.img)):
+      newimg.append(p.img[x])
+    return Picture(newimg)
 
   def under(self, p):
     """ Devuelve una nueva figura poniendo la figura p sobre la
