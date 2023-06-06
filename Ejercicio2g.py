@@ -31,6 +31,7 @@ for i in range(7):
     line = line.join(lineaux)
 image.up(line)
 
+#casillas vacias
 line = square.negative()
 for i in range(7):
     if (i%2 ==1):
@@ -46,7 +47,7 @@ for a in range(4):
     else:
         image = image.up(line)
 
-
+#fichas blancas
 line = pawn
 line = line.setBackground(square)
 for i in range(7):
