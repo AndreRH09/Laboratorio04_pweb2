@@ -334,7 +334,6 @@
             ```
             <br>
 
-
             *    (b) ![(b)](imagenes/ejercicio_02_b.png)
             <br>
             ```py
@@ -436,7 +435,7 @@
             <br> 
 
             *    (g) ![(g)](imagenes/ejercicio_02_g.png)
-                        <br>
+            <br>
             ```python
             from interpreter import draw
             from chessPictures import *
