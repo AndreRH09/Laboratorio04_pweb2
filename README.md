@@ -320,7 +320,7 @@
         2.  Usando únicamente los métodos de los objetos de la clase Picture dibuje las siguientes figuras (invoque a draw):
 
             *    (a) ![(a)](imagenes/ejercicio_02_a.png)
-            <br>
+            
             - Programa Principal
             ```python
             from interpreter import draw
@@ -332,10 +332,10 @@
             img = line1.up(line2)
             draw(img)
             ```
-            <br>
+            
 
             *    (b) ![(b)](imagenes/ejercicio_02_b.png)
-            <br>
+            
             ```py
             from interpreter import draw
             from chessPictures import *
@@ -347,11 +347,11 @@
             img = line1.up(line2)
             draw(img)
             ```
-            <br>
+            
 
             
             *    (c) ![(c)](imagenes/ejercicio_02_c.png)
-            <br>
+            
             ```python
             from interpreter import draw
             from chessPictures import *
@@ -360,10 +360,10 @@
 
             draw(line1)
             ```
-            <br>
+            
 
             *    (d) ![(d)](imagenes/ejercicio_02_d.png)
-            <br>
+            
             ```python
             from interpreter import draw
             from chessPictures import *
@@ -379,11 +379,11 @@
 
             draw(image)
             ```
-            <br>   
+            
             
 
             *    (e) ![(e)](imagenes/ejercicio_02_e.png)
-            <br>
+            
             ```python
             from interpreter import draw
             from chessPictures import *
@@ -399,10 +399,9 @@
 
             draw(image.horizontalMirror())
             ```
-            <br>   
 
             *    (f) ![(f)](imagenes/ejercicio_02_f.png)
-            <br>
+            
             ```python
             from interpreter import draw
             from chessPictures import *
@@ -432,10 +431,10 @@
             draw(image)
 
             ```
-            <br> 
+            
 
             *    (g) ![(g)](imagenes/ejercicio_02_g.png)
-            <br>
+            
             ```python
             from interpreter import draw
             from chessPictures import *
